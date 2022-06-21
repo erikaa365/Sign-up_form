@@ -30,24 +30,26 @@
         </div>
 
         <form action="">
-            <fieldset>
-                <p class="form_header">Let's do this</p>
+            <fieldset class="form">
+                <p class="form_header">Let's do this!</p>
                 <ul>
                     <li><label for="first_name">FIRST NAME</label> <br>
                     <input type="text" id="first_name" name="first_name" placeholder="Enter first name" required></li>
+                    
+                    <li><label for="phone">PHONE NUMBER</label> <br>
+                    <input type="text" id="phone" name="phone" placeholder="Enter phone number" required></li> 
+                    
+                    <li><label for="password" class="pass">PASSWORD</label>
+                        <div class="pass_info">Password must contain: </div> <br>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+                     </li>
 
                     <li><label for="last_name">LAST NAME</label> <br>
                     <input type="text" id="last_name" name="last_name" placeholder="Enter last name" required></li>
-
+                    
                     <li><label for="email">EMAIL</label> <br>
                     <input type="text" id="email" name="email" placeholder="Enter email" required></li>
-
-                    <li><label for="phone">PHONE NUMBER</label> <br>
-                    <input type="text" id="phone" name="phone" placeholder="Enter phone number" required></li> 
-
-                    <li><label for="password">PASSWORD</label> <br>
-                    <input type="password" id="password" name="password" placeholder="Enter password" required></li>
-
+    
                     <li><label for="psw_repeat">CONFIRM PASSWORD</label> <br>
                     <input type="password" id="psw_repeat" placeholder="Confirm password" required></li>
                 </ul>
@@ -57,7 +59,7 @@
         </form>
 
         <div class="login">Already have an account?
-            <a href="">Log in</a>
+            <a href="" class="login">Log in</a>
         </div>
     </div>
 
