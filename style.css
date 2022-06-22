@@ -9,6 +9,7 @@ a{
 
 body{
     margin: 0;
+    padding: 30px;
     height: 100vh;
     display: flex;   
 }
