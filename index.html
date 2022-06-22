@@ -29,7 +29,7 @@
             <p>You <i>know</i> you want to.</p>
         </div>
 
-        <form action="">
+        <form action="" method="post">
             <fieldset class="form">
                 <p class="form_header">Let's do this!</p>
                 <ul>
@@ -39,9 +39,15 @@
                     <li><label for="phone">PHONE NUMBER</label> <br>
                     <input type="text" id="phone" name="phone" placeholder="Enter phone number" required></li> 
                     
-                    <li><label for="password" class="pass">PASSWORD</label>
-                        <div class="pass_info">Password must contain: </div> <br>
-                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+                    <li><label for="psw" class="psw">PASSWORD</label>
+                        <div class="psw_info">
+                            <h4>Password must contain the following:</h3>
+                            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                            <p id="number" class="invalid">A <b>number</b></p>
+                            <p id="length" class="invalid">Minimum <b>8 characters</b></p>    
+                        </div> <br>
+                    <input type="password" id="psw"  name="psw" placeholder="Enter password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                      </li>
 
                     <li><label for="last_name">LAST NAME</label> <br>
@@ -50,8 +56,8 @@
                     <li><label for="email">EMAIL</label> <br>
                     <input type="text" id="email" name="email" placeholder="Enter email" required></li>
     
-                    <li><label for="psw_repeat">CONFIRM PASSWORD</label> <br>
-                    <input type="password" id="psw_repeat" placeholder="Confirm password" required></li>
+                    <li><label for="psw_confirm">CONFIRM PASSWORD</label> <br>
+                    <input type="password" id="psw_confirm"  placeholder="Confirm password" required></li>
                 </ul>
             </fieldset>
 
@@ -59,8 +65,26 @@
         </form>
 
         <div class="login">Already have an account?
-            <a href="" class="login">Log in</a>
+            <button onclick="loginForm()" id="login">Log in</button>
         </div>
+    </div>
+
+    <div id="loginContainer" class="loginContainer">
+        <form action="" method="">
+            <button class="xLogin">✖</button>
+
+            <div id="loginForm">
+                <p class="form_header">Log in</p>
+                <ul>
+                    <li> <label for="email_login">Email</label> <br>
+                    <input type="text" id="email_login" name="email_login"></li>
+                    
+                    <li><label for="psw_login">Password</label> <br>
+                    <input type="password" id="psw_login" name="psw_login"></li>
+                </ul>
+                <button type="submit">Log in</button>
+            </div>
+        </form>
     </div>
 
     
