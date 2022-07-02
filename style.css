@@ -118,7 +118,7 @@ input:focus{
 button{
     background-color: #596D48;
     color: whitesmoke;
-    font-size: 26px;
+    font-size: 22px;
     padding: 15px;
     border-radius: 15px;
     margin: 35px;
@@ -126,13 +126,16 @@ button{
 }
 
 .login{
-    margin: 35px;
     color: #000;
+    margin-left: 30px;
+    margin-top: 10px;
 }
 
 #login{
     font-size: 18px;
     padding: 10px;
+    margin: 0;
+    margin-left: 20px;
 }
 
 
